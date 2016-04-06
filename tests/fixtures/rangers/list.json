@@ -1,0 +1,54 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/rangers",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "301",
+            "message": "Moved Permanently"
+        },
+        "headers": {
+            "Date": "Wed, 06 Apr 2016 17:39:21 GMT",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Location": "\/v1\/rangers\/",
+            "Content-Length": "0",
+            "Content-Type": "text\/html; charset=utf-8"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/rangers\/",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Date": "Wed, 06 Apr 2016 17:39:21 GMT",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Vary": "Accept,Cookie,Accept-Encoding",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Allow": "GET, HEAD, OPTIONS",
+            "Content-Type": "application\/json",
+            "Transfer-Encoding": "chunked"
+        },
+        "body": "[{\"id\":5,\"name\":\"Black Ranger\",\"color\":\"black\",\"weapon\":{\"id\":2,\"name\":\"Power Axe\",\"type\":\"dagger\"},\"zords\":[{\"id\":11,\"name\":\"Lion Thunderzord\",\"type\":\"thunderzord\"},{\"id\":2,\"name\":\"Mastodon Dinozord\",\"type\":\"dinozord\"}],\"images\":[]},{\"id\":3,\"name\":\"Blue Ranger\",\"color\":\"blue\",\"weapon\":{\"id\":3,\"name\":\"Power Lance\",\"type\":\"dagger\"},\"zords\":[{\"id\":5,\"name\":\"Triceratops Dinozord\",\"type\":\"dinozord\"},{\"id\":13,\"name\":\"Unicorn Thunderzord\",\"type\":\"thunderzord\"}],\"images\":[]},{\"id\":6,\"name\":\"Green Ranger\",\"color\":\"green\",\"weapon\":{\"id\":7,\"name\":\"Dragon Dagger\",\"type\":\"dagger\"},\"zords\":[{\"id\":10,\"name\":\"Dragonzord\",\"type\":\"dinozord\"}],\"images\":[]},{\"id\":4,\"name\":\"Pink Ranger\",\"color\":\"pink\",\"weapon\":{\"id\":5,\"name\":\"Power Bow\",\"type\":\"dagger\"},\"zords\":[{\"id\":12,\"name\":\"Firebird Thunderzord\",\"type\":\"thunderzord\"},{\"id\":3,\"name\":\"Pterodactyl Dinozord\",\"type\":\"dinozord\"}],\"images\":[]},{\"id\":1,\"name\":\"Red Ranger\",\"color\":\"red\",\"weapon\":{\"id\":1,\"name\":\"Power Sword\",\"type\":\"sword\"},\"zords\":[{\"id\":15,\"name\":\"Red Dragon Thunderzord\",\"type\":\"thunderzord\"},{\"id\":1,\"name\":\"Tyrannosaurus Dinozord\",\"type\":\"dinozord\"}],\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/rangers\/Mmpr-red.png\"}]},{\"id\":7,\"name\":\"White Ranger\",\"color\":\"white\",\"weapon\":null,\"zords\":[{\"id\":18,\"name\":\"White Tigerzord\",\"type\":\"thunderzord\"}],\"images\":[]},{\"id\":2,\"name\":\"Yellow Ranger\",\"color\":\"yellow\",\"weapon\":{\"id\":4,\"name\":\"Power Daggers\",\"type\":\"dagger\"},\"zords\":[{\"id\":14,\"name\":\"Griffin Thunderzord\",\"type\":\"thunderzord\"},{\"id\":4,\"name\":\"Sabertooth Tiger Dinozord\",\"type\":\"dinozord\"}],\"images\":[]}]"
+    }
+}]

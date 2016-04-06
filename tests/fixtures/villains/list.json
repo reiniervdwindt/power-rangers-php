@@ -1,0 +1,54 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/villains",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "301",
+            "message": "Moved Permanently"
+        },
+        "headers": {
+            "Date": "Wed, 06 Apr 2016 18:07:00 GMT",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Location": "\/v1\/villains\/",
+            "Content-Length": "0",
+            "Content-Type": "text\/html; charset=utf-8"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/villains\/",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Date": "Wed, 06 Apr 2016 18:07:00 GMT",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Vary": "Accept,Cookie,Accept-Encoding",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Allow": "GET, HEAD, OPTIONS",
+            "Content-Type": "application\/json",
+            "Transfer-Encoding": "chunked"
+        },
+        "body": "[{\"id\":2,\"name\":\"Goldar\",\"description\":\"Goldar is a lion-faced, griffin-themed knight who is the second-in-command for both Rita Repulsa and Lord Zedd.\",\"images\":[]},{\"id\":3,\"name\":\"Lord Zedd\",\"description\":\"Lord Zedd is a major villain from the Mighty Morphin Power Rangers series and recurring through Power Rangers Zeo and Power Rangers in Space.\",\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/villains\/Zedd2.jpg\"}]},{\"id\":1,\"name\":\"Rita Repulsa\",\"description\":\"Rita Repulsa is an evil humanoid alien witch bent on galactic domination.\",\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/villains\/Tumblr_n33hmx587W1rxbov4o1_500.jpg\"}]}]"
+    }
+}]

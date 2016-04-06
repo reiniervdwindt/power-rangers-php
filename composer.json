@@ -1,0 +1,20 @@
+{
+    "name": "reiniervdwindt/power-rangers-php",
+    "description": "A PHP wrapper for Power Rangers API",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "php-vcr/php-vcr": "dev-master",
+        "php-vcr/phpunit-testlistener-vcr": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PowerRangers\\": "src/"
+        }
+    }
+}
