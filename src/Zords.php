@@ -3,9 +3,9 @@
 namespace PowerRangers;
 
 use JsonMapper;
-use PowerRangers\Models\Ranger;
+use PowerRangers\Models\Zord;
 
-class Rangers extends Core
+class Zords extends Core
 {
     /**
      * @param $id
@@ -14,11 +14,11 @@ class Rangers extends Core
      */
     public function getByID($id)
     {
-        $response = $this->get(sprintf('rangers/%d', $id));
+        $response = $this->get(sprintf('zords/%d', $id));
         $mapper = new JsonMapper();
-        $ranger = $mapper->map($response, new Ranger());
+        $zord = $mapper->map($response, new Zord());
 
-        return $ranger;
+        return $zord;
     }
 
     /**
@@ -26,10 +26,10 @@ class Rangers extends Core
      */
     public function getAll()
     {
-        $response = $this->get('rangers');
+        $response = $this->get('zords');
         $mapper = new JsonMapper();
-        $rangers = $mapper->mapArray($response, array(), new Ranger());
+        $zords = $mapper->mapArray($response, array(), new Zord());
 
-        return $rangers;
+        return $zords;
     }
 }

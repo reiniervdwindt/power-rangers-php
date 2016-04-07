@@ -18,7 +18,7 @@ class Core
     /**
      * @param string $method
      * @param $endpoint
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     * @return mixed
      */
     private function handle_request($method = self::GET, $endpoint)
     {
@@ -29,7 +29,7 @@ class Core
 
     /**
      * @param $endpoint
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     * @return mixed
      */
     public function get($endpoint)
     {

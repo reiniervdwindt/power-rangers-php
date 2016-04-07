@@ -1,0 +1,60 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/series\/1",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "301",
+            "message": "301 Moved Permanently"
+        },
+        "headers": {
+            "Via": "1.1 W0211, 1.1 W0201",
+            "Content-Length": "0",
+            "Date": "Thu, 07 Apr 2016 12:52:04 GMT",
+            "Location": "\/v1\/series\/1\/",
+            "Content-Type": "text\/html; charset=utf-8",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Keep-Alive": "timeout=15, max=94",
+            "Connection": "Keep-Alive"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/series\/1\/",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "200 OK"
+        },
+        "headers": {
+            "Via": "1.1 W0211, 1.1 W0201",
+            "Transfer-Encoding": "chunked",
+            "Date": "Thu, 07 Apr 2016 12:52:04 GMT",
+            "Content-Type": "application\/json",
+            "Server": "Apache\/2.2.15 (Red Hat)",
+            "Vary": "Accept,Cookie,Accept-Encoding",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Allow": "GET, HEAD, OPTIONS",
+            "Keep-Alive": "timeout=15, max=93",
+            "Connection": "Keep-Alive"
+        },
+        "body": "{\"id\":1,\"number\":1,\"name\":\"Mighty Morphin Power Rangers\",\"year\":1993,\"seasons\":[{\"id\":2,\"number\":1,\"name\":\"Season 1\",\"year\":1993,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr1.jpg\"}]},{\"id\":3,\"number\":2,\"name\":\"Season 2\",\"year\":1994,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr2.jpg\"}]},{\"id\":4,\"number\":3,\"name\":\"Season 3\",\"year\":1995,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr3.jpg\"}]}],\"images\":[]}"
+    }
+}]

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea3976a129c17ccfd9efbdd4519f7b56",
-    "content-hash": "c983019430676ced6884ef4e72385a2b",
+    "hash": "92c60837e49ea8f0d883a9ab01bfaa96",
+    "content-hash": "dc7cd4abcaa7c214384952a65e2cdaac",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -177,6 +177,45 @@
                 "uri"
             ],
             "time": "2016-02-18 21:54:00"
+        },
+        {
+            "name": "netresearch/jsonmapper",
+            "version": "v0.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/jsonmapper.git",
+                "reference": "a58388bdda93424363de20bc20fe0e349ec735ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/jsonmapper/zipball/a58388bdda93424363de20bc20fe0e349ec735ee",
+                "reference": "a58388bdda93424363de20bc20fe0e349ec735ee",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Weiske",
+                    "email": "christian.weiske@netresearch.de",
+                    "homepage": "http://www.netresearch.de/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Map nested JSON structures onto PHP classes",
+            "time": "2015-09-24 12:43:26"
         },
         {
             "name": "psr/http-message",

@@ -5,7 +5,8 @@
     "require": {
         "php": ">=5.5",
         "ext-curl": "*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "netresearch/jsonmapper": "^0.10.0"
     },
     "require-dev": {
         "phpunit/phpunit": "4.8.*",
@@ -14,7 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "PowerRangers\\": "src/"
+            "PowerRangers\\": "src/",
+            "PowerRangers\\Models\\": "src/models"
         }
     }
 }

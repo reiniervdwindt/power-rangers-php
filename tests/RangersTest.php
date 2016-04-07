@@ -1,4 +1,6 @@
 <?php
+use PowerRangers\Models\Ranger;
+use PowerRangers\Models\Weapon;
 use PowerRangers\Rangers;
 
 class RangersTest extends \PHPUnit_Framework_TestCase
@@ -12,6 +14,7 @@ class RangersTest extends \PHPUnit_Framework_TestCase
         $rangers = $client->getAll();
 
         $ranger = $rangers[0];
+        $this->assertInstanceOf(Ranger::class, $ranger);
         $this->assertEquals($ranger->id, 5);
         $this->assertEquals($ranger->name, 'Black Ranger');
         $this->assertEquals($ranger->color, 'black');
@@ -19,7 +22,7 @@ class RangersTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('array', $ranger->images);
         $this->assertInternalType('array', $ranger->zords);
 
-        $this->assertInstanceOf('stdClass', $ranger->weapon);
+        $this->assertInstanceOf(Weapon::class, $ranger->weapon);
         $this->assertEquals($ranger->weapon->id, 2);
         $this->assertEquals($ranger->weapon->name, 'Power Axe');
         $this->assertEquals($ranger->weapon->type, 'dagger');
@@ -33,6 +36,7 @@ class RangersTest extends \PHPUnit_Framework_TestCase
         $client = new Rangers();
         $ranger = $client->getByID(1);
 
+        $this->assertInstanceOf(Ranger::class, $ranger);
         $this->assertEquals($ranger->id, 1);
         $this->assertEquals($ranger->name, 'Red Ranger');
         $this->assertEquals($ranger->color, 'red');
@@ -40,7 +44,7 @@ class RangersTest extends \PHPUnit_Framework_TestCase
         $this->assertInternalType('array', $ranger->images);
         $this->assertInternalType('array', $ranger->zords);
 
-        $this->assertInstanceOf('stdClass', $ranger->weapon);
+        $this->assertInstanceOf(Weapon::class, $ranger->weapon);
         $this->assertEquals($ranger->weapon->id, 1);
         $this->assertEquals($ranger->weapon->name, 'Power Sword');
         $this->assertEquals($ranger->weapon->type, 'sword');

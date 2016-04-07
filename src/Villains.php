@@ -2,22 +2,34 @@
 
 namespace PowerRangers;
 
+use JsonMapper;
+use PowerRangers\Models\Villain;
+
 class Villains extends Core
 {
     /**
      * @param $id
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     * @return object
+     * @throws \JsonMapper_Exception
      */
     public function getByID($id)
     {
-        return $this->get(sprintf('villains/%d', $id));
+        $response = $this->get(sprintf('villains/%d', $id));
+        $mapper = new JsonMapper();
+        $vilain = $mapper->map($response, new Villain());
+
+        return $vilain;
     }
 
     /**
-     * @return mixed|\Psr\Http\Message\ResponseInterface
+     * @return mixed
      */
     public function getAll()
     {
-        return $this->get(sprintf('villains'));
+        $response = $this->get('villains');
+        $mapper = new JsonMapper();
+        $villains = $mapper->mapArray($response, array(), new Villain());
+
+        return $villains;
     }
 }
