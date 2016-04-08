@@ -2,7 +2,6 @@
 
 namespace PowerRangers;
 
-use JsonMapper;
 use PowerRangers\Models\Civilian;
 
 class Civilians extends Core
@@ -14,11 +13,7 @@ class Civilians extends Core
      */
     public function getByID($id)
     {
-        $response = $this->get(sprintf('civilians/%d', $id));
-        $mapper = new JsonMapper();
-        $civilian = $mapper->map($response, new Civilian());
-
-        return $civilian;
+        return $this->get(sprintf('civilians/%d', $id), Civilian::class);
     }
 
     /**
@@ -26,10 +21,6 @@ class Civilians extends Core
      */
     public function getAll()
     {
-        $response =  $this->get('civilians');
-        $mapper = new JsonMapper();
-        $civilians = $mapper->mapArray($response, array(), new Civilian());
-
-        return $civilians;
+        return $this->get('civilians', Civilian::class);
     }
 }

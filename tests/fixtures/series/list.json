@@ -55,6 +55,6 @@
             "Keep-Alive": "timeout=15, max=95",
             "Connection": "Keep-Alive"
         },
-        "body": "[{\"id\":1,\"number\":1,\"name\":\"Mighty Morphin Power Rangers\",\"year\":1993,\"seasons\":[{\"id\":2,\"number\":1,\"name\":\"Season 1\",\"year\":1993,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr1.jpg\"}]},{\"id\":3,\"number\":2,\"name\":\"Season 2\",\"year\":1994,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr2.jpg\"}]},{\"id\":4,\"number\":3,\"name\":\"Season 3\",\"year\":1995,\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr3.jpg\"}]}],\"images\":[]}]"
+        "body": "[{\"id\":1,\"number\":1,\"name\":\"Mighty Morphin Power Rangers\",\"year\":1993,\"seasons\":[{\"id\":2,\"number\":1,\"name\":\"Season 1\",\"year\":1993,\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr1.jpg\"}]},{\"id\":3,\"number\":2,\"name\":\"Season 2\",\"year\":1994,\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr2.jpg\"}]},{\"id\":4,\"number\":3,\"name\":\"Season 3\",\"year\":1995,\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/series\/Poster-mmpr3.jpg\"}]}],\"images\":[]}]"
     }
 }]

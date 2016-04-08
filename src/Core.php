@@ -2,6 +2,7 @@
 namespace PowerRangers;
 
 use GuzzleHttp\Client;
+use JsonMapper;
 
 class Core
 {
@@ -29,10 +30,24 @@ class Core
 
     /**
      * @param $endpoint
+     * @param null $model
      * @return mixed
+     * @throws \JsonMapper_Exception
      */
-    public function get($endpoint)
+    public function get($endpoint, $model=null)
     {
-        return $this->handle_request(self::GET, $endpoint);
+        $response = $this->handle_request(self::GET, $endpoint);
+
+        if ($model) {
+            $mapper = new JsonMapper();
+
+            if (is_array($response)) {
+                return $mapper->mapArray($response, array(), new $model());
+            }
+
+            return $mapper->map($response, new $model());
+        }
+
+        return $response;
     }
 }

@@ -55,6 +55,6 @@
             "Keep-Alive": "timeout=15, max=97",
             "Connection": "Keep-Alive"
         },
-        "body": "{\"id\":1,\"name\":\"Farkas Bulkmeier\",\"description\":\"Farkas \\\"Bulk\\\" Bulkmeier is a fictional character in the Power Rangers universe. He appeared as a permanent cast member from the original series of Mighty Morphin Power Rangers until Power Rangers: In Space, and has also appeared several times after this. This makes him one of the longest-serving permanent cast members in Power Rangers.\",\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/civilians\/Prs-al-bulk.jpg\"}]}"
+        "body": "{\"id\":1,\"name\":\"Farkas Bulkmeier\",\"description\":\"Farkas \\\"Bulk\\\" Bulkmeier is a fictional character in the Power Rangers universe. He appeared as a permanent cast member from the original series of Mighty Morphin Power Rangers until Power Rangers: In Space, and has also appeared several times after this. This makes him one of the longest-serving permanent cast members in Power Rangers.\",\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/civilians\/Prs-al-bulk.jpg\"}]}"
     }
 }]

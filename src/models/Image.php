@@ -6,5 +6,5 @@ class Image
     /**
      * @var string
      */
-    public $image;
+    public $url;
 }

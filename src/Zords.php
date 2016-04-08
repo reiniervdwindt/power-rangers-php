@@ -2,7 +2,6 @@
 
 namespace PowerRangers;
 
-use JsonMapper;
 use PowerRangers\Models\Zord;
 
 class Zords extends Core
@@ -14,11 +13,7 @@ class Zords extends Core
      */
     public function getByID($id)
     {
-        $response = $this->get(sprintf('zords/%d', $id));
-        $mapper = new JsonMapper();
-        $zord = $mapper->map($response, new Zord());
-
-        return $zord;
+        return $this->get(sprintf('zords/%d', $id), Zord::class);
     }
 
     /**
@@ -26,10 +21,6 @@ class Zords extends Core
      */
     public function getAll()
     {
-        $response = $this->get('zords');
-        $mapper = new JsonMapper();
-        $zords = $mapper->mapArray($response, array(), new Zord());
-
-        return $zords;
+        return $this->get('zords', Zord::class);
     }
 }

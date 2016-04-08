@@ -1,7 +1,8 @@
 <?php
+use PowerRangers\Models\Villain;
 use PowerRangers\Villains;
 
-class VillainsTest extends \PHPUnit_Framework_TestCase
+class VillainsTest extends PHPUnit_Framework_TestCase
 {
     /**
      * @vcr villains/list.json
@@ -12,6 +13,7 @@ class VillainsTest extends \PHPUnit_Framework_TestCase
         $Villains = $client->getAll();
 
         $villain = $Villains[0];
+        $this->assertInstanceOf(Villain::class, $villain);
         $this->assertEquals($villain->id, 2);
         $this->assertEquals($villain->name, 'Goldar');
         $this->assertRegExp('/^Goldar is a lion-faced, griffin-themed knight/', $villain->description);
@@ -26,6 +28,7 @@ class VillainsTest extends \PHPUnit_Framework_TestCase
         $client = new Villains();
         $villain = $client->getByID(1);
 
+        $this->assertInstanceOf(Villain::class, $villain);
         $this->assertEquals($villain->id, 1);
         $this->assertEquals($villain->name, 'Rita Repulsa');
         $this->assertRegExp('/^Rita Repulsa is an evil humanoid alien witch/', $villain->description);

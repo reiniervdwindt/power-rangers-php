@@ -19,7 +19,7 @@ class Series
     public $name;
 
     /**
-     * @var string
+     * @var integer
      */
     public $year;
 

@@ -49,6 +49,6 @@
             "Content-Type": "application\/json",
             "Transfer-Encoding": "chunked"
         },
-        "body": "{\"id\":1,\"name\":\"Rita Repulsa\",\"description\":\"Rita Repulsa is an evil humanoid alien witch bent on galactic domination.\",\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/villains\/Tumblr_n33hmx587W1rxbov4o1_500.jpg\"}]}"
+        "body": "{\"id\":1,\"name\":\"Rita Repulsa\",\"description\":\"Rita Repulsa is an evil humanoid alien witch bent on galactic domination.\",\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/villains\/Tumblr_n33hmx587W1rxbov4o1_500.jpg\"}]}"
     }
 }]

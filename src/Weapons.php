@@ -2,7 +2,6 @@
 
 namespace PowerRangers;
 
-use JsonMapper;
 use PowerRangers\Models\Weapon;
 
 class Weapons extends Core
@@ -14,11 +13,7 @@ class Weapons extends Core
      */
     public function getByID($id)
     {
-        $response = $this->get(sprintf('weapons/%d', $id));
-        $mapper = new JsonMapper();
-        $weapon = $mapper->map($response, new Weapon());
-
-        return $weapon;
+        return $this->get(sprintf('weapons/%d', $id), Weapon::class);
     }
 
     /**
@@ -26,10 +21,6 @@ class Weapons extends Core
      */
     public function getAll()
     {
-        $response = $this->get('weapons');
-        $mapper = new JsonMapper();
-        $weapons = $mapper->mapArray($response, array(), new Weapon());
-
-        return $weapons;
+        return $this->get('weapons', Weapon::class);
     }
 }

@@ -2,7 +2,6 @@
 
 namespace PowerRangers;
 
-use JsonMapper;
 use PowerRangers\Models\Ranger;
 
 class Rangers extends Core
@@ -14,11 +13,7 @@ class Rangers extends Core
      */
     public function getByID($id)
     {
-        $response = $this->get(sprintf('rangers/%d', $id));
-        $mapper = new JsonMapper();
-        $ranger = $mapper->map($response, new Ranger());
-
-        return $ranger;
+        return $this->get(sprintf('rangers/%d', $id), Ranger::class);
     }
 
     /**
@@ -26,10 +21,6 @@ class Rangers extends Core
      */
     public function getAll()
     {
-        $response = $this->get('rangers');
-        $mapper = new JsonMapper();
-        $rangers = $mapper->mapArray($response, array(), new Ranger());
-
-        return $rangers;
+        return $this->get('rangers', Ranger::class);
     }
 }

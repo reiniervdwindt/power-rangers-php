@@ -55,6 +55,6 @@
             "Keep-Alive": "timeout=15, max=99",
             "Connection": "Keep-Alive"
         },
-        "body": "{\"id\":1,\"name\":\"Power Sword\",\"type\":\"sword\",\"ranger\":{\"id\":1,\"name\":\"Red Ranger\",\"color\":\"red\"},\"images\":[{\"image\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/weapons\/Power_Sword.jpg\"}]}"
+        "body": "{\"id\":1,\"name\":\"Power Sword\",\"type\":\"sword\",\"ranger\":{\"id\":1,\"name\":\"Red Ranger\",\"color\":\"red\"},\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/weapons\/Power_Sword.jpg\"}]}"
     }
 }]
