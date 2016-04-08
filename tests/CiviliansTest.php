@@ -20,10 +20,9 @@ class CiviliansTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($civilian->id, 6);
         $this->assertEquals($civilian->name, 'Angela');
         $this->assertRegExp('/^Angela was a minor character in the first season/', $civilian->description);
-        $this->assertInternalType('array', $civilian->images);
 
-        $image = $civilian->images[0];
-        $this->assertNull($image->url);
+        $this->assertInternalType('array', $civilian->images);
+        $this->assertCount(0, $civilian->images);
     }
 
     /**

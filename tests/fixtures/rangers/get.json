@@ -5,7 +5,7 @@
         "headers": {
             "Host": "powerapi.blueyes.nl",
             "Accept-Encoding": null,
-            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
             "Accept": null
         }
     },
@@ -16,7 +16,7 @@
             "message": "Moved Permanently"
         },
         "headers": {
-            "Date": "Wed, 06 Apr 2016 17:39:21 GMT",
+            "Date": "Fri, 08 Apr 2016 17:33:32 GMT",
             "Server": "Apache\/2.2.15 (Red Hat)",
             "Location": "\/v1\/rangers\/1\/",
             "Content-Length": "0",
@@ -30,7 +30,7 @@
         "headers": {
             "Host": "powerapi.blueyes.nl",
             "Accept-Encoding": null,
-            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
             "Accept": null
         }
     },
@@ -41,7 +41,7 @@
             "message": "OK"
         },
         "headers": {
-            "Date": "Wed, 06 Apr 2016 17:39:21 GMT",
+            "Date": "Fri, 08 Apr 2016 17:33:32 GMT",
             "Server": "Apache\/2.2.15 (Red Hat)",
             "Vary": "Accept,Cookie,Accept-Encoding",
             "X-Frame-Options": "SAMEORIGIN",

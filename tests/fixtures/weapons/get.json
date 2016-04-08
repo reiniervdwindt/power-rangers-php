@@ -5,7 +5,7 @@
         "headers": {
             "Host": "powerapi.blueyes.nl",
             "Accept-Encoding": null,
-            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
             "Accept": null
         }
     },
@@ -13,17 +13,14 @@
         "status": {
             "http_version": "1.1",
             "code": "301",
-            "message": "301 Moved Permanently"
+            "message": "Moved Permanently"
         },
         "headers": {
-            "Via": "1.1 W0211, 1.1 W0201",
-            "Content-Length": "0",
-            "Date": "Thu, 07 Apr 2016 12:52:26 GMT",
-            "Location": "\/v1\/weapons\/1\/",
-            "Content-Type": "text\/html; charset=utf-8",
+            "Date": "Fri, 08 Apr 2016 17:33:35 GMT",
             "Server": "Apache\/2.2.15 (Red Hat)",
-            "Keep-Alive": "timeout=15, max=100",
-            "Connection": "Keep-Alive"
+            "Location": "\/v1\/weapons\/1\/",
+            "Content-Length": "0",
+            "Content-Type": "text\/html; charset=utf-8"
         }
     }
 },{
@@ -33,7 +30,7 @@
         "headers": {
             "Host": "powerapi.blueyes.nl",
             "Accept-Encoding": null,
-            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.30",
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
             "Accept": null
         }
     },
@@ -41,19 +38,16 @@
         "status": {
             "http_version": "1.1",
             "code": "200",
-            "message": "200 OK"
+            "message": "OK"
         },
         "headers": {
-            "Via": "1.1 W0211, 1.1 W0201",
-            "Transfer-Encoding": "chunked",
-            "Date": "Thu, 07 Apr 2016 12:52:26 GMT",
-            "Content-Type": "application\/json",
+            "Date": "Fri, 08 Apr 2016 17:33:35 GMT",
             "Server": "Apache\/2.2.15 (Red Hat)",
             "Vary": "Accept,Cookie,Accept-Encoding",
             "X-Frame-Options": "SAMEORIGIN",
             "Allow": "GET, HEAD, OPTIONS",
-            "Keep-Alive": "timeout=15, max=99",
-            "Connection": "Keep-Alive"
+            "Content-Type": "application\/json",
+            "Transfer-Encoding": "chunked"
         },
         "body": "{\"id\":1,\"name\":\"Power Sword\",\"type\":\"sword\",\"ranger\":{\"id\":1,\"name\":\"Red Ranger\",\"color\":\"red\"},\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/weapons\/Power_Sword.jpg\"}]}"
     }
