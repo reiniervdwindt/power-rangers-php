@@ -1,0 +1,52 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/monsters\/1",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.0",
+            "code": "301",
+            "message": "Moved Permanently"
+        },
+        "headers": {
+            "Date": "Sat, 09 Apr 2016 13:44:54 GMT",
+            "Server": "WSGIServer\/0.1 Python\/2.7.10",
+            "Content-Type": "text\/html; charset=utf-8",
+            "Location": "\/v1\/monsters\/1\/"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "http:\/\/powerapi.blueyes.nl\/v1\/monsters\/1\/",
+        "headers": {
+            "Host": "powerapi.blueyes.nl",
+            "Accept-Encoding": null,
+            "User-Agent": "GuzzleHttp\/6.2.0 curl\/7.43.0 PHP\/5.5.31",
+            "Accept": null
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.0",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Date": "Sat, 09 Apr 2016 13:44:54 GMT",
+            "Server": "WSGIServer\/0.1 Python\/2.7.10",
+            "Vary": "Accept, Cookie",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Content-Type": "application\/json",
+            "Allow": "GET, HEAD, OPTIONS"
+        },
+        "body": "{\"id\":1,\"name\":\"Bones\",\"description\":\"Bones is a skeleton monster created by Finster. Bones is notable as being the first monster-of-the-week to appear in Power Rangers.\",\"images\":[{\"url\":\"http:\/\/powerapi.blueyes.nl\/static\/media\/monsters\/MMPR_Bones.jpg\"}]}"
+    }
+}]
